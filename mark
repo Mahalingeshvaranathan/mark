@@ -1,0 +1,62 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mark1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author CMD
+ */
+public class Mark1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) { 
+
+Scanner student= new Scanner(System.in);
+System.out.println("Enter the student name:");
+String name = student.nextLine();
+System.out.println("Enter the class of the student:");
+String Class = student.nextLine();
+System.out.println("Enter rollno of the student:");
+int rollno = student.nextInt();
+System.out.println("Enter mark in Python Programming:");
+int mark_1 = student.nextInt();
+System.out.println("Enter mark in basic EEE:");
+int mark_2 = student.nextInt();
+System.out.println("Enter mark in Data Structure:");
+int mark_3 = student.nextInt();
+System.out.println("Enter mark in Engineering mathematics:");
+int mark_4 = student.nextInt();
+System.out.println("Enter mark in Engineering Graphics:");
+int mark_5 = student.nextInt();
+int total = mark_1 + mark_2 + mark_3 + mark_4 + mark_5;
+double average = (total*100)/500;
+String grade = "";
+if (average>=90)
+grade = "A+";
+else if (average>=80)
+grade = "A";
+else if (average>=70)
+grade = "B+";
+else if (average>=60)
+grade = "B";
+else if (average>=50)
+grade = "C";
+else if (average>=40)
+grade = "D";
+else
+grade = "E";
+System.out.println("Total Marks =" + total);
+System.out.println("Percentage =" + average);
+System.out.println("Grade =" + grade);
+}
+}
+    
+    
+
